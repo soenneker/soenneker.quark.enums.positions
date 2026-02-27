@@ -6,6 +6,7 @@ namespace Soenneker.Quark.Enums;
 /// An HTML CSS keyword set in .NET enumeration form
 /// </summary>
 [EnumValue<string>]
+[IncludeEnumValues(typeof(GlobalKeyword))]
 public sealed partial class PositionKeyword
 {
     /// <summary>
@@ -32,6 +33,4 @@ public sealed partial class PositionKeyword
     /// Positioned based on the user's scroll position.
     /// </summary>
     public static readonly PositionKeyword Sticky = new("sticky");
-
-    public static implicit operator PositionKeyword(GlobalKeyword style) => new(style.Value);
 }
