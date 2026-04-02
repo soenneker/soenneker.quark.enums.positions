@@ -1,6 +1,6 @@
 using Soenneker.Gen.EnumValues;
 
-namespace Soenneker.Quark.Enums;
+namespace Soenneker.Quark;
 
 /// <summary>
 /// An HTML CSS keyword set in .NET enumeration form
