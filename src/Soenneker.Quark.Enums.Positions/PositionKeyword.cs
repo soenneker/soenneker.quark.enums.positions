@@ -3,7 +3,7 @@ using Soenneker.Gen.EnumValues;
 namespace Soenneker.Quark;
 
 /// <summary>
-/// An HTML CSS keyword set in .NET enumeration form
+/// Represents a CSS <c>position</c> keyword.
 /// </summary>
 [EnumValue<string>]
 [IncludeEnumValues(typeof(GlobalKeyword))]
@@ -20,17 +20,17 @@ public sealed partial class PositionKeyword
     public static readonly PositionKeyword Relative = new("relative");
 
     /// <summary>
-    /// Positioned relative to the nearest positioned ancestor.
+    /// Leaves normal flow and uses its containing block for offsets.
     /// </summary>
     public static readonly PositionKeyword Absolute = new("absolute");
 
     /// <summary>
-    /// Positioned relative to the viewport.
+    /// Leaves normal flow and is usually positioned relative to the viewport.
     /// </summary>
     public static readonly PositionKeyword Fixed = new("fixed");
 
     /// <summary>
-    /// Positioned based on the user's scroll position.
+    /// Behaves relatively until a scroll threshold is reached.
     /// </summary>
     public static readonly PositionKeyword Sticky = new("sticky");
 }
